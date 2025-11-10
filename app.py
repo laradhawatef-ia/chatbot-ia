@@ -1,3 +1,23 @@
+import os
+import subprocess
+import sys
+
+# Corrige sklearn manquant sur Streamlit Cloud
+try:
+    import sklearn
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "scikit-learn==1.3.2"])
+    import sklearn
+
+# Désactive les warnings watchdog
+os.environ["STREAMLIT_WATCHDOG_WARNING"] = "false"
+
+import streamlit as st
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import nltk
+import numpy as np
+   
 import streamlit as st
 import json
 import random
