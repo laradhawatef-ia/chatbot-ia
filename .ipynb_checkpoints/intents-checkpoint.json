@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "tag": "salutation",
+      "patterns": ["Bonjour", "Salut", "Coucou", "Hello"],
+      "responses": ["Bonjour ! 😊", "Salut, comment ça va ?", "Coucou ! Ravie de te parler !"]
+    },
+    {
+      "tag": "merci",
+      "patterns": ["Merci", "Merci beaucoup", "Thanks"],
+      "responses": ["Avec plaisir !", "De rien !", "Je suis là pour ça !"]
+    },
+    {
+      "tag": "au_revoir",
+      "patterns": ["Au revoir", "Bye", "À bientôt"],
+      "responses": ["Au revoir ! 👋", "À bientôt !", "Bye !"]
+    },
+    {
+      "tag": "comment_ca_va",
+      "patterns": ["Comment ça va ?", "Ça va ?", "Comment vas-tu ?"],
+      "responses": ["Je vais très bien, merci ! Et toi ?", "Tout roule ! Et toi ?"]
+    }
+  ]
+}
+
