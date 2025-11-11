@@ -1,6 +1,6 @@
 name: chatbot
 dependencies:
-  - python=3.11
+  - python
   - pip
   - pip:
       - streamlit
